@@ -1,39 +1,43 @@
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL("https://veritrust.example.com"),
+  metadataBase: new URL("https://nextapp.in"),
   title: {
-    default: "Veritrust — Trust & Security Platform",
-    template: "%s · Veritrust",
+    default: "next. — Fast Local Delivery in Contai",
+    template: "%s · next.",
   },
   description:
-    "Veritrust is the trust infrastructure for modern teams — verifiable identity, real-time fraud defense, and bank-grade compliance, wrapped in a beautifully simple platform.",
+    "next. delivers groceries, medicines, snacks and daily essentials to your door in minutes from trusted local stores in Contai (Kanthi), West Bengal. Live tracking, fair transparent pricing, UPI or cash on delivery.",
+  applicationName: "next.",
   keywords: [
-    "trust platform",
-    "security",
-    "identity verification",
-    "fraud prevention",
-    "compliance",
-    "SOC 2",
+    "next app",
+    "fast delivery Contai",
+    "grocery delivery Kanthi",
+    "quick commerce West Bengal",
+    "medicine delivery",
+    "local store delivery",
+    "Moolya India",
   ],
-  authors: [{ name: "Veritrust" }],
+  authors: [{ name: "Moolya India Private Limited" }],
+  creator: "Moolya India Private Limited",
   openGraph: {
-    title: "Veritrust — Trust & Security Platform",
+    title: "next. — Fast Local Delivery in Contai",
     description:
-      "Verifiable identity, real-time fraud defense, and bank-grade compliance in one platform.",
+      "Groceries, medicines & daily essentials delivered to your door in minutes. Shop local, delivered fast.",
     type: "website",
-    siteName: "Veritrust",
+    siteName: "next.",
+    locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Veritrust — Trust & Security Platform",
+    title: "next. — Fast Local Delivery in Contai",
     description:
-      "Verifiable identity, real-time fraud defense, and bank-grade compliance in one platform.",
+      "Groceries, medicines & daily essentials delivered to your door in minutes.",
   },
 };
 
 export const viewport = {
-  themeColor: "#05060f",
+  themeColor: "#0f172a",
   width: "device-width",
   initialScale: 1,
 };

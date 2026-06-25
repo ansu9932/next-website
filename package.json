@@ -2,7 +2,7 @@
   "name": "next-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Veritrust — a trust & security platform marketing site built with Next.js and pure-CSS 3D animations.",
+  "description": "next. — marketing website for a fast local delivery app (Contai, West Bengal), built with Next.js and pure-CSS 3D animations.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
