@@ -322,23 +322,64 @@ img {
   }
 }
 
-/* ----------------------------- Brand wordmark ----------------------------- */
+/* -----------------------------------------------------------------
+   Brand wordmark — "next" where the t's crossbar is a green arrow
+   with a slanted tail. Fully em-based so it scales with font-size.
+   ----------------------------------------------------------------- */
 .wordmark {
-  display: inline-flex;
-  align-items: baseline;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: -0.05em;
   line-height: 1;
+  white-space: nowrap;
+  color: var(--text);
+  --arrow: var(--green);
 }
-.wordmark .dot-g {
-  width: 0.42em;
-  height: 0.42em;
-  border-radius: 50%;
-  background: var(--green);
-  margin-left: 0.06em;
-  box-shadow: 0 0 14px rgba(0, 209, 107, 0.8);
-  align-self: flex-end;
-  margin-bottom: 0.04em;
+.wordmark .wm-text {
+  display: inline-block;
+}
+/* the custom "t" */
+.wordmark .wm-t {
+  position: relative;
+  display: inline-block;
+  width: 0.66em;
+  height: 0.72em;
+  vertical-align: baseline; /* empty inline-block aligns bottom to baseline */
+  margin-left: 0.01em;
+}
+.wordmark .wm-stem {
+  position: absolute;
+  left: 0.07em;
+  bottom: 0;
+  width: 0.16em;
+  height: 0.72em;
+  background: currentColor;
+  border-radius: 0.03em;
+}
+/* the green arrow that forms the crossbar + tail */
+.wordmark .wm-arrow {
+  position: absolute;
+  top: 0.07em;
+  left: -0.03em;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.18em rgba(0, 209, 107, 0.45));
+}
+.wordmark .wm-shaft {
+  width: 0.4em;
+  height: 0.2em;
+  background: var(--arrow);
+  /* slanted left edge => the "/" tail */
+  clip-path: polygon(0.13em 0, 100% 0, 100% 100%, 0 100%);
+}
+.wordmark .wm-head {
+  width: 0;
+  height: 0;
+  border-top: 0.19em solid transparent;
+  border-bottom: 0.19em solid transparent;
+  border-left: 0.24em solid var(--arrow);
+  margin-left: -0.01em;
 }
 
 /* ============================================================

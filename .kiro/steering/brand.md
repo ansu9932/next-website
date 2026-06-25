@@ -26,19 +26,20 @@ local delivery app. Keep all content and styling consistent with the brand below
 
 ## Brand design system (single source of truth: `zaldi-app/packages/shared/brand.ts`)
 
-- **Brand name:** `next` shown as the wordmark **next.** (lowercase, with a
-  hyper-green dot). Use the `Wordmark` component, not plain text.
+- **Brand name:** `next` shown as the wordmark **next** where the final letter
+  **t**'s crossbar is a green arrow with a slanted tail pointing right. Use the
+  `Wordmark` component (em-based, scales with font-size), not plain text.
 - **Colors:** Hyper Green `#00D16B` (primary/actions), dark `#00B85D`, light
   `#E6FBF0`; Obsidian/Ink `#0F172A`; sky/trust accent `#38BDF8`.
 - **Font:** Inter.
 
 ## The three apps
 
-| App | Audience | Purpose |
-| --- | --- | --- |
-| **next** | Customers | Browse, cart, checkout (UPI/COD), live tracking |
-| **next Partner** | Stores | Accept orders, mark ready, manage products/prices |
-| **next Rider** | Riders | Get nearby offers, navigate, deliver, track earnings |
+| App              | Audience  | Purpose                                              |
+| ---------------- | --------- | ---------------------------------------------------- |
+| **next**         | Customers | Browse, cart, checkout (UPI/COD), live tracking      |
+| **next Partner** | Stores    | Accept orders, mark ready, manage products/prices    |
+| **next Rider**   | Riders    | Get nearby offers, navigate, deliver, track earnings |
 
 ## "Everyone wins" fair-pricing model
 
