@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ShieldIcon, MenuIcon, ArrowIcon } from "./icons";
+import Wordmark from "./Wordmark";
+import { MenuIcon, ArrowIcon } from "./icons";
 
 const LINKS = [
-  { href: "#platform", label: "Platform" },
-  { href: "#security", label: "Security" },
-  { href: "#customers", label: "Customers" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "#how", label: "How it works" },
+  { href: "#fair", label: "Fair pricing" },
+  { href: "#apps", label: "Apps" },
+  { href: "#partners", label: "For stores & riders" },
 ];
 
 export default function Navbar() {
@@ -23,11 +24,8 @@ export default function Navbar() {
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="container nav-inner">
-        <a href="#top" className="brand" aria-label="Veritrust home">
-          <span className="brand-mark">
-            <ShieldIcon style={{ width: 20, height: 20, color: "#fff" }} />
-          </span>
-          Veritrust
+        <a href="#top" className="brand" aria-label="next. home">
+          <Wordmark />
         </a>
 
         <ul className="nav-links">
@@ -40,18 +38,18 @@ export default function Navbar() {
 
         <div className="nav-cta">
           <a
-            href="#"
+            href="#partners"
             className="btn btn-ghost"
             style={{ padding: "11px 20px" }}
           >
-            Sign in
+            Partner with us
           </a>
           <a
-            href="#pricing"
+            href="#download"
             className="btn btn-primary"
             style={{ padding: "11px 22px" }}
           >
-            Get started
+            Get the app
             <ArrowIcon style={{ width: 16, height: 16 }} />
           </a>
           <button className="nav-toggle" aria-label="Open menu">
